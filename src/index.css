@@ -203,3 +203,20 @@
     cursor: none !important;
   }
 }
+
+/* ---------- Mobile Hero Layout Fix ---------- */
+
+@media (max-width: 639px) {
+  #top .hero-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  #top .hero-certifications {
+    min-width: 0;
+  }
+
+  #top .hero-spring-card {
+    max-width: 62%;
+  }
+}

@@ -343,7 +343,7 @@ function Intro() {
       <m.ul
         variants={rise}
         aria-label="Professional highlights"
-        className="mt-8 flex flex-wrap items-end gap-x-5 gap-y-5 border-t border-line pt-6 sm:mt-10 sm:gap-x-10 sm:pt-7"
+        className="hero-highlights mt-8 grid grid-cols-2 items-start gap-x-4 gap-y-5 border-t border-line pt-6 sm:mt-10 sm:flex sm:flex-wrap sm:items-end sm:gap-x-10 sm:pt-7"
       >
 
         {stats.map(({ value, short, label }) => (
@@ -366,8 +366,8 @@ function Intro() {
         {/* Courses and learning badges */}
 
         {certs.length > 0 && (
-          <li>
-            <span className="flex flex-col items-start gap-1 sm:h-9 sm:flex-row sm:items-center sm:gap-1.5">
+          <li className="hero-certifications col-span-2 sm:col-span-1">
+            <span className="flex flex-wrap items-center gap-1.5">
 
               {certs.map(({ name, code }) => (
                 <span
@@ -438,6 +438,7 @@ function Float({
 // JAVA DEVELOPER FLOATING CARD
 // ---------------------------------------------------------------------------
 
+
 function JavaCard({ className = "" }) {
   const concepts = [
     ["01", "Object-Oriented Programming"],
@@ -448,9 +449,8 @@ function JavaCard({ className = "" }) {
 
   return (
     <div
-      className={`rounded-2xl border border-line bg-surface/95 p-4 shadow-xl shadow-black/10 backdrop-blur-xl ${className}`}
+      className={`overflow-hidden rounded-2xl border border-line bg-surface/95 p-4 shadow-xl shadow-black/10 backdrop-blur-xl ${className}`}
     >
-
       <div className="flex items-center justify-between border-b border-line pb-3">
         <div className="flex items-center gap-2">
           <div className="flex size-8 items-center justify-center rounded-lg bg-accent-soft text-accent">
@@ -461,7 +461,6 @@ function JavaCard({ className = "" }) {
             <p className="font-display text-sm font-bold text-ink">
               Core Java
             </p>
-
             <p className="font-mono text-[9px] text-muted">
               PROGRAMMING
             </p>
@@ -473,11 +472,28 @@ function JavaCard({ className = "" }) {
         </span>
       </div>
 
-
-      <div className="mt-3 space-y-2">
-        {concepts.map(([number, title]) => (
-          <div
+      <div className="relative mt-3 space-y-2">
+        {concepts.map(([number, title], index) => (
+          <m.div
             key={number}
+            initial={{ opacity: 0, x: -12 }}
+            animate={{
+              opacity: 1,
+              x: [0, 3, 0],
+            }}
+            transition={{
+              opacity: {
+                duration: 0.5,
+                delay: index * 0.2,
+              },
+              x: {
+                duration: 2.4,
+                delay: 0.6 + index * 0.3,
+                repeat: Infinity,
+                repeatDelay: 0.7,
+                ease: "easeInOut",
+              },
+            }}
             className="flex items-center gap-2.5 text-[10px]"
           >
             <span className="font-mono text-accent">
@@ -488,10 +504,22 @@ function JavaCard({ className = "" }) {
               {title}
             </span>
 
-            <span className="ml-auto text-accent">
+            <m.span
+              className="ml-auto text-accent"
+              animate={{
+                opacity: [0.4, 1, 0.4],
+                scale: [0.9, 1.15, 0.9],
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                delay: index * 0.3,
+                ease: "easeInOut",
+              }}
+            >
               <BadgeCheck size={12} />
-            </span>
-          </div>
+            </m.span>
+          </m.div>
         ))}
       </div>
 
@@ -501,16 +529,25 @@ function JavaCard({ className = "" }) {
         <span className="font-mono text-[9px] text-muted">
           Building with Java
         </span>
-      </div>
 
+        <m.span
+          className="text-accent"
+          animate={{ opacity: [1, 0, 1] }}
+          transition={{ duration: 1, repeat: Infinity }}
+        >
+          _
+        </m.span>
+      </div>
     </div>
   );
 }
 
 
+
 // ---------------------------------------------------------------------------
 // SPRING BOOT FLOATING CARD
 // ---------------------------------------------------------------------------
+
 
 function SpringBootCard({ className = "" }) {
   const layers = [
@@ -521,9 +558,8 @@ function SpringBootCard({ className = "" }) {
 
   return (
     <div
-      className={`rounded-2xl border border-line bg-surface/95 p-4 shadow-xl shadow-black/10 backdrop-blur-xl ${className}`}
+      className={`overflow-hidden rounded-2xl border border-line bg-surface/95 p-4 shadow-xl shadow-black/10 backdrop-blur-xl ${className}`}
     >
-
       <div className="flex items-center justify-between border-b border-line pb-3">
         <div className="flex items-center gap-2">
           <div className="flex size-8 items-center justify-center rounded-lg bg-blue/10 text-blue">
@@ -534,7 +570,6 @@ function SpringBootCard({ className = "" }) {
             <p className="font-display text-sm font-bold text-ink">
               Spring Boot
             </p>
-
             <p className="font-mono text-[9px] text-muted">
               BACKEND DEVELOPMENT
             </p>
@@ -546,42 +581,88 @@ function SpringBootCard({ className = "" }) {
         </span>
       </div>
 
-
       <div className="mt-3 space-y-2">
         {layers.map((layer, index) => (
-          <div
+          <m.div
             key={layer}
+            initial={{ opacity: 0, x: -12 }}
+            animate={{
+              opacity: 1,
+              x: [0, 2, 0],
+              backgroundColor: [
+                "rgba(45,212,191,0)",
+                "rgba(45,212,191,0.07)",
+                "rgba(45,212,191,0)",
+              ],
+            }}
+            transition={{
+              opacity: {
+                duration: 0.5,
+                delay: index * 0.25,
+              },
+              x: {
+                duration: 2.3,
+                delay: 0.6 + index * 0.4,
+                repeat: Infinity,
+                repeatDelay: 0.7,
+                ease: "easeInOut",
+              },
+              backgroundColor: {
+                duration: 2.3,
+                delay: 0.6 + index * 0.4,
+                repeat: Infinity,
+                repeatDelay: 0.7,
+                ease: "easeInOut",
+              },
+            }}
             className="flex items-center gap-2 rounded-lg border border-line bg-surface-2/60 px-2.5 py-2"
           >
-            <span className="font-mono text-[10px] text-accent">
+            <m.span
+              className="font-mono text-[10px] text-accent"
+              animate={{ opacity: [0.45, 1, 0.45] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                delay: index * 0.4,
+              }}
+            >
               0{index + 1}
-            </span>
+            </m.span>
 
             <span className="text-[10px] font-medium text-ink">
               {layer}
             </span>
-          </div>
+          </m.div>
         ))}
       </div>
 
-
       <div className="mt-3 flex flex-wrap gap-2 border-t border-line pt-3">
-
-        <span className="inline-flex items-center gap-1 rounded-md bg-accent-soft px-2 py-1 font-mono text-[9px] text-accent">
+        <m.span
+          animate={{ y: [0, -2, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="inline-flex items-center gap-1 rounded-md bg-accent-soft px-2 py-1 font-mono text-[9px] text-accent"
+        >
           <ShieldCheck size={11} />
           JWT
-        </span>
+        </m.span>
 
-        <span className="inline-flex items-center gap-1 rounded-md bg-blue/10 px-2 py-1 font-mono text-[9px] text-blue">
+        <m.span
+          animate={{ y: [0, -2, 0], opacity: [0.65, 1, 0.65] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            delay: 0.5,
+          }}
+          className="inline-flex items-center gap-1 rounded-md bg-blue/10 px-2 py-1 font-mono text-[9px] text-blue"
+        >
           <Database size={11} />
           MySQL
-        </span>
-
+        </m.span>
       </div>
-
     </div>
   );
 }
+
 
 
 // ---------------------------------------------------------------------------
@@ -595,7 +676,7 @@ function Visual() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease, delay: 0.2 }}
-      className="@container relative mx-auto aspect-square w-full max-w-88 sm:max-w-100 md:aspect-5/6 md:max-w-lg lg:aspect-100/134 lg:max-w-none"
+      className="@container relative mx-auto aspect-[2/3] w-full max-w-88 sm:aspect-square sm:max-w-100 md:aspect-5/6 md:max-w-lg lg:aspect-100/134 lg:max-w-none"
     >
 
       {/* Background Panel */}
@@ -666,9 +747,9 @@ function Visual() {
       <Float
         delay={0.8}
         offset
-        className="absolute right-[-2cqw] bottom-0 md:bottom-[-8cqw]"
+        className="hero-spring-card absolute right-[1%] bottom-[2%] md:right-[-2cqw] md:bottom-[-8cqw]"
       >
-        <SpringBootCard className="w-53 text-[10px] sm:w-58 sm:text-[10.5px] lg:w-53 lg:text-[10px] xl:w-64 xl:text-[11px]" />
+        <SpringBootCard className="w-44 p-3 text-[9px] sm:w-58 sm:p-4 sm:text-[10.5px] lg:w-53 lg:text-[10px] xl:w-64 xl:text-[11px]" />
       </Float>
 
     </m.div>
