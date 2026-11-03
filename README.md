@@ -1,250 +1,165 @@
-// ---------------------------------------------------------------------------
-// All portfolio content lives in this file.
-// Update these values with your details; keep qualifications and experience accurate.
-// ---------------------------------------------------------------------------
+# 👋 Hi, I'm Rahul Bhadekar
 
-export const profile = {
-  name: "Rahul Bhadekar",
-  initials: "RB",
-  role: "Software Developer",
-  roleAccent: "Java | Spring Boot | Full Stack",
-  location: "Pune, Maharashtra, India",
-  yearsExperience: "Fresher",
-  devopsYears: null,
+### Java Full Stack Developer | Spring Boot | React | REST APIs
 
-  intro:
-    "Computer Science graduate focused on building reliable software and web applications using Java, Spring Boot, REST APIs, React, and relational databases.",
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2F81F7&center=true&vCenter=true&width=650&lines=Java+Full+Stack+Developer;Spring+Boot+%26+REST+API+Enthusiast;Building+Real-World+Web+Applications;Always+Learning+%26+Improving" alt="Typing SVG" />
+</p>
 
-  resumeFile: "/Rahul_Bhadekar_Resume.pdf",
-};
+<p align="center">
+  <a href="https://github.com/rahulbhadekar">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/rahul-bhadekar">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:rahulbhadekar2@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
 
-export const contact = {
-  // Add your public professional email and phone number when ready.
-  email: null,
-  phone: null,
-  whatsapp: null,
-  linkedin: "https://www.linkedin.com/in/rahul-bhadekar",
-  github: "https://github.com/rahulbhadekar",
-};
+---
 
-// Tool names shown in the scrolling strip under the hero.
-export const coreStack = [
-  "Java",
-  "Spring Boot",
-  "Spring Data JPA",
-  "Hibernate",
-  "Spring Security",
-  "REST APIs",
-  "MySQL",
-  "PostgreSQL",
-  "React.js",
-  "JavaScript",
-  "Git & GitHub",
-  "Maven",
-  "Postman",
-];
+## 🚀 About Me
 
-export const navLinks = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
-];
+I'm a Computer Science and Engineering graduate from **Lakshmi Narain College of Technology & Science, Bhopal**, passionate about software development and building practical web applications.
 
-export const about = {
-  paragraphs: [
-    "I'm a Computer Science and Engineering graduate from LNCT&S, Bhopal, with a strong interest in software development and problem-solving. I enjoy understanding how applications work and turning ideas into practical solutions.",
-    "My current focus is Java backend development with Spring Boot, REST API development, database management, and frontend integration using React. I keep improving through hands-on projects, coding practice, and continuous learning.",
-  ],
+My primary focus is **Java Backend Development with Spring Boot**, REST API development, database management, and frontend integration using React.
 
-  motto: "Keep learning. Build with purpose. Improve with every project.",
+- 🎓 B.Tech in Computer Science & Engineering — 2026
+- 💻 Interested in Java, Spring Boot, Backend & Full Stack Development
+- 🔐 Learning authentication, application security and scalable API development
+- 🛠️ Building real-world projects to strengthen my development skills
+- 📍 Based in Pune, Maharashtra, India
+- 🎯 Goal: Grow as a skilled Software Developer
 
-  glance: [
-    { label: "Location", value: "Pune, Maharashtra" },
-    { label: "Current focus", value: "Java & Software Development" },
-    { label: "Experience", value: "Fresher" },
-    { label: "Primary stack", value: "Java, Spring Boot, React" },
-    { label: "Database", value: "MySQL, PostgreSQL" },
-    { label: "Education", value: "B.Tech CSE, 2026" },
-  ],
+---
 
-  stats: [
-    { value: 2, suffix: "", label: "Internship Experiences" },
-    { value: 3, suffix: "", label: "Featured Projects" },
-    { value: 2, suffix: "", label: "Academic Qualifications" },
-  ],
+## 💻 Technical Skills
 
-  // Keep the icon values compatible with the existing focus-area illustrations.
-  focusAreas: [
-    {
-      title: "Java Backend Development",
-      color: "accent",
-      icon: "pipeline",
-      text: "Building backend functionality with Java and Spring Boot, including REST APIs, layered application structure, and Spring Data JPA.",
-    },
-    {
-      title: "Full-Stack Application Development",
-      color: "blue",
-      icon: "container",
-      text: "Connecting frontend interfaces built with React, JavaScript, HTML, and CSS to backend services through REST APIs.",
-    },
-    {
-      title: "Database Design & SQL",
-      color: "amber",
-      icon: "cloud",
-      text: "Working with MySQL and PostgreSQL, relational database design, SQL queries, joins, and application data persistence.",
-    },
-    {
-      title: "Development Tools & Practices",
-      color: "coral",
-      icon: "monitor",
-      text: "Using Git, GitHub, Maven, Postman, and IntelliJ IDEA during application development, API testing, and version control.",
-    },
-  ],
-};
+| Category | Technologies |
+|---|---|
+| Programming Languages | Java, JavaScript, SQL |
+| Frontend | HTML5, CSS3, JavaScript, React.js, Bootstrap |
+| Backend | Java, Spring Boot, Spring MVC, Spring Data JPA, Hibernate |
+| Security | Spring Security, JWT Authentication |
+| Database | MySQL, PostgreSQL, MongoDB, Firebase |
+| APIs | REST APIs, CRUD Operations |
+| Tools | IntelliJ IDEA, VS Code, Postman, Maven |
+| Version Control | Git, GitHub |
+| Fundamentals | OOP, DSA, DBMS, Computer Networks |
 
-export const experience = [
-  {
-    company: "OctaNet Services Pvt. Ltd.",
-    role: "Frontend Development Intern",
-    location: null,
-    period: "August 2024 – September 2024",
-    color: "amber",
-    points: [
-      "Completed a frontend development internship focused on practical website and user-interface development.",
-    ],
-    tech: ["HTML", "CSS", "JavaScript", "Frontend Development"],
-  },
-  {
-    company: "IBM SkillsBuild (CSRBOX)",
-    role: "Front-End Web Development Intern",
-    location: null,
-    period: "June 2024 – August 2024",
-    color: "coral",
-    points: [
-      "Completed the IBM SkillsBuild Summer Internship in Front-End Web Development through CSRBOX.",
-      "Learned and applied HTML, CSS, and JavaScript.",
-      "Worked on the frontend of the Revitalize Waste Management website with Firebase integration.",
-    ],
-    tech: ["HTML", "CSS", "JavaScript", "Firebase"],
-  },
-];
+---
 
-export const skills = [
-  {
-    category: "Programming Languages",
-    icon: "git",
-    items: ["Java", "JavaScript", "SQL"],
-  },
-  {
-    category: "Backend Development",
-    icon: "pipeline",
-    items: [
-      "Spring Boot",
-      "Spring Data JPA",
-      "Hibernate",
-      "Spring Security",
-      "REST API Development",
-    ],
-  },
-  {
-    category: "Frontend Development",
-    icon: "container",
-    items: ["HTML5", "CSS3", "JavaScript", "React.js (Basics)"],
-  },
-  {
-    category: "Databases",
-    icon: "monitor",
-    items: ["MySQL", "PostgreSQL", "Database Design", "SQL Joins"],
-  },
-  {
-    category: "Tools & Computer Science",
-    icon: "cloud",
-    items: [
-      "Git",
-      "GitHub",
-      "Maven",
-      "Postman",
-      "IntelliJ IDEA",
-      "OOP",
-      "DSA",
-      "DBMS",
-      "Computer Networks",
-    ],
-  },
-];
+## 🚀 Featured Projects
 
-export const projects = [
-  {
-    title: "GoTrip – Travel Booking Application",
-    category: "Full Stack",
-    art: "pipeline",
-    description:
-      "A travel booking application with a Spring Boot backend, MySQL database, and JWT-based authentication. The frontend uses HTML, CSS, and JavaScript.",
-    tech: ["Java", "Spring Boot", "MySQL", "JWT", "HTML", "CSS", "JavaScript"],
-    github: null,
-    live: null,
-  },
-  {
-    title: "ClickStore – E-Commerce Application",
-    category: "Full Stack",
-    art: "modules",
-    description:
-      "An e-commerce application in development using React, Java Spring Boot, and PostgreSQL, with a focus on product, customer, cart, and order workflows.",
-    tech: ["React", "Java", "Spring Boot", "PostgreSQL"],
-    github: null,
-    live: null,
-  },
-  {
-    title: "Revitalize – Waste Management Website",
-    category: "Frontend",
-    art: "monitoring",
-    description:
-      "A frontend website project focused on waste management, built using HTML, CSS, and JavaScript with Firebase integration.",
-    tech: ["HTML", "CSS", "JavaScript", "Firebase"],
-    github: null,
-    live: null,
-  },
-];
+### 1. GoTrip – Travel Booking Application
 
-export const education = [
-  {
-    degree: "B.Tech in Computer Science & Engineering – 7.5 CGPA",
-    institution: "Lakshmi Narain College of Technology & Science (LNCT&S), Bhopal – RGPV",
-    year: "2026",
-  },
-  {
-    degree: "Diploma in Computer Science & Engineering – 7.5 CGPA",
-    institution: "SV Polytechnic College, Bhopal",
-    year: "2023",
-  },
-];
+A full-stack travel web application designed to manage tour listings, user authentication, booking operations and contact enquiries.
 
-export const certifications = [
-  {
-    name: "Java Programming Training Certificate",
-    short: "Java Training",
-    issuer: "SCA Coaching, Bhopal",
-    url: null,
-  },
-  {
-    name: "Java Programming",
-    short: "Java",
-    issuer: "Infosys Springboard — Course Completed",
-    url: null,
-  },
-  {
-    name: "Java & Spring Boot Development",
-    short: "Java + Spring Boot",
-    issuer: "Udemy — Course Completed",
-    url: null,
-  },
-  {
-    name: "AWS Cloud & AI Learning",
-    short: "AWS Cloud & AI",
-    issuer: "AWS Skill Builder — Learning Completed",
-    url: null,
-  },
-];
+**Key Features**
+- User authentication and JWT-based authorization
+- Tour listing and management
+- Booking management
+- REST API integration
+- Password encryption using BCrypt
+- Database integration using Spring Data JPA
+
+**Tech Stack:** Java, Spring Boot, Spring Data JPA, MySQL, JWT, HTML, CSS, JavaScript
+
+---
+
+### 2. ClickStore – E-Commerce Application
+
+An e-commerce project focused on building product management and shopping functionality with a modern frontend and Java backend.
+
+**Key Features**
+- Product management
+- REST API-based backend architecture
+- Database integration
+- Frontend and backend integration
+- Authentication and application development
+
+**Tech Stack:** React.js, Java, Spring Boot, Spring Data JPA, PostgreSQL/MySQL
+
+---
+
+### 3. Revitalize – Waste Management Website
+
+A frontend web development project focused on waste management and environmental awareness, developed during the IBM SkillsBuild internship program.
+
+**Key Features**
+- Responsive website interface
+- Interactive frontend components
+- Firebase integration
+- Environmental awareness content
+
+**Tech Stack:** HTML, CSS, JavaScript, Firebase
+
+---
+
+## 💼 Internship Experience
+
+### IBM SkillsBuild / CSRBOX
+**Front-End Web Development Intern | June 2024 – August 2024**
+
+- Worked on frontend web development concepts.
+- Developed responsive user interfaces using HTML, CSS and JavaScript.
+- Contributed to the Revitalize Waste Management project.
+
+### OctaNet Services Pvt. Ltd.
+**Frontend Web Developer Intern | September 2024 – December 2024**
+
+- Worked on frontend development tasks.
+- Practiced HTML, CSS and JavaScript.
+- Improved responsive design and web development skills.
+
+---
+
+## 🎓 Education
+
+| Qualification | Institution | Year | CGPA |
+|---|---|---|---|
+| B.Tech – Computer Science & Engineering | LNCT&S, Bhopal | 2026 | 7.5 |
+| Diploma – Computer Science & Engineering | SV Polytechnic College, Bhopal | 2023 | 7.5 |
+
+---
+
+## 📜 Courses & Credentials
+
+- Java Programming Training – SCA Coaching, Bhopal
+- Programming Using Java – Infosys Springboard
+- Database Management System – Infosys Springboard
+- AI Fundamentals – IBM SkillsBuild
+
+---
+
+## 📊 GitHub Statistics
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=rahulbhadekar&show_icons=true&theme=tokyonight&hide_border=true" alt="Rahul's GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulbhadekar&layout=compact&theme=tokyonight&hide_border=true" alt="Most Used Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rahulbhadekar&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+
+---
+
+## 📫 Connect With Me
+
+- **Email:** rahulbhadekar2@gmail.com
+- **LinkedIn:** [linkedin.com/in/rahul-bhadekar](https://www.linkedin.com/in/rahul-bhadekar)
+- **GitHub:** [github.com/rahulbhadekar](https://github.com/rahulbhadekar)
+- **Location:** Pune, Maharashtra, India
+
+---
+
+<p align="center">
+  ### 💡 "Keep learning. Build with purpose. Improve with every project."
+</p>
+
+<p align="center">
+  Thanks for visiting my profile! ⭐
+</p>
